@@ -85,8 +85,8 @@ if sys.platform == "win32":
     system_host_file = os.path.join(os.sep, os.getenv("SystemRoot"), "system32", "drivers", "etc", "hosts")
 else:
     """ Swap these if you're testing! """
-    #system_host_file = os.path.join(os.sep, "etc", "hosts")
-    system_host_file = os.path.join(os.path.dirname(__file__), "hosts")
+    system_host_file = os.path.join(os.sep, "etc", "hosts")
+    #system_host_file = os.path.join(os.path.dirname(__file__), "hosts")
 
 outfile = open(system_host_file, 'w')
 
